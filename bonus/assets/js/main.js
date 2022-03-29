@@ -13,8 +13,16 @@ let flag ;
 // Create the array with the registered e-mail
 registeredEmail = ["lele19977@gmail.com", "Deadpool@gmail.com", "Skywalker@gmail.com", "HelloKitty@gmail.com", "Ungabunga@gmail.com", ];
 
-// Get the user e-mail with a prompt  
-userEmail = prompt("Inserire la mail tua mail!") 
+// Get the user e-mail with a prompt  or if bonus with the input
+
+/* userEmail = prompt("Inserire la mail tua mail!") */
+
+
+//funcion is bonus 
+function myFunction(){
+    userEmail = document.getElementById("email_input").value
+    console.log(userEmail)
+//end of bonus code , you have to commente even the final } at the end and enable the first userEmail ^ // 
 
     // Check if the user email is in the e-mail array and Create the appropiate message 
     for (var i = 0; i < registeredEmail.length ; i++ ){
@@ -38,7 +46,7 @@ userEmail = prompt("Inserire la mail tua mail!")
         document.getElementById("my_user-not-registered").innerHTML = 'Utente non registrato <i class="fas fa-exclamation-triangle"></i>';
     }
     
-
+}
     
     // B 
     /*
